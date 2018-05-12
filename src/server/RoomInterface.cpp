@@ -160,9 +160,9 @@ int RoomInterface::detectDeckCompatibleLflist(void* pdata)
 
     int compatible =0;
 
-    int err1 = deckManager.CheckLFList(deck, deckManager._lfList[0].hash, true, (Config::getInstance()->strictAllowedList)?false:true);
+    int err1 = deckManager.CheckDeck(deck, deckManager._lfList[0].hash, true, (Config::getInstance()->strictAllowedList)?false:true);
     compatible += (err1)?0:1;
-    int err2 = deckManager.CheckLFList(deck, deckManager._lfList[1].hash, (Config::getInstance()->strictAllowedList)?false:true, true);
+    int err2 = deckManager.CheckDeck(deck, deckManager._lfList[1].hash, (Config::getInstance()->strictAllowedList)?false:true, true);
     compatible += (err2)?0:2;
 
     int err3=0;

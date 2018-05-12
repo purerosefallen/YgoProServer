@@ -808,7 +808,7 @@ int HandicapDuel::Analyze(char* msgbuffer, unsigned int len) {
 			for(auto oit = observers.begin(); oit != observers.end(); ++oit)
 				netServer->ReSendToPlayer(*oit);
 			if(turn_count > 0) {
-			  swap_single_tag(pduel);
+			  //swap_single_tag(pduel);
 				if(turn_count % 2 == 0) {
 					if(cur_player[0] == players[0])
 						cur_player[0] = players[1];

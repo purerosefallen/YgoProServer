@@ -14,7 +14,7 @@ OUT = $(TARGET)
 OBJ = $(patsubst %.cpp,%.o,$(patsubst %.c,%.o,$(SRC_SERVER)))
 
 # include directories
-INCLUDES = -I ./ -I .. -I /usr/include/lua5.2/ -I /usr/include/freetype2/ -I ../ygopro-client/ocgcore/ -I ../ygopro-client/gframe/ -I /usr/include/irrlicht
+INCLUDES = -I ./ -I .. -I /usr/include/lua5.3/ -I /usr/include/freetype2/ -I ../ygopro-client/ocgcore/ -I ../ygopro-client/gframe/ -I /usr/include/irrlicht
 
 # C compiler flags (-g -O2 -Wall)
 CCFLAGS =   -O0 -g -fPIC -fstack-protector-all -Wall  -fnon-call-exceptions

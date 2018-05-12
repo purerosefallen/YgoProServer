@@ -3,7 +3,7 @@
 #include "deck_manager.h"
 
 
-const unsigned short PRO_VERSION = 0x133A;
+unsigned short PRO_VERSION = 0x1343;
 bool DataUtils::LoadCards()
 {
         ygo::deckManager.LoadLFList();
